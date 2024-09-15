@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { MantineProvider } from "@mantine/core";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -12,6 +13,7 @@ const geistMono = localFont({
   variable: "--font-geist-mono",
   weight: "100 900",
 });
+import "@mantine/core/styles.css";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -25,11 +27,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+        <body
+          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+          >
+          <MantineProvider>
+          {children}
+      </MantineProvider>
+        </body>
     </html>
   );
 }

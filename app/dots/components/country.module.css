@@ -1,0 +1,42 @@
+.selectWrapper {
+    width: fit-content;
+  }
+  
+  .selectRoot {
+    outline: none;
+    border: none;
+  }
+  
+  .selectInput {
+    background-color: #242328;
+    color: white;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #333038;
+    font-size: 13px;
+  }
+  
+  .selectInput::placeholder {
+    color: white;
+  }
+  
+  .selectDropdown {
+    background-color: #242328;
+    border: 1px solid #333038;
+  }
+  
+  .selectOption {
+    color: white;
+    font-size: 13px;
+  }
+  
+  .selectOptionSelected {
+    background-color: #18171a;
+  }
+  
+  .selectOption:hover {
+    background-color: #18171a;
+    color: white;
+
+  }
+  

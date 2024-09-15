@@ -1,16 +1,16 @@
 "use client";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import Header from "./components/header";
+import InfoBox from "./components/info-box";
+import LeftSidebar from "./components/left-sidebar";
+import DialogBox from "./shared/dialog-box";
+import MobileTabs from "./components/mobile-tabs";
 import { Slider } from "@/components/ui/slider";
+import CountrySelector from "./components/country-selector";
+import DotFilledMap from "./components/canvas";
 import { useStore } from "@/store/store";
 import { ColorInput } from "@mantine/core";
-import Header from "./dots/components/header";
-import DotFilledMap from "./dots/components/canvas";
-import CountrySelector from "./dots/components/country-selector";
-import InfoBox from "./dots/components/info-box";
-import LeftSidebar from "./dots/components/left-sidebar";
-import MobileTabs from "./dots/components/mobile-tabs";
-import Seperator from "./dots/components/seperator";
-import DialogBox from "./dots/shared/dialog-box";
+import Seperator from "./components/seperator";
 
 const WorldDots = () => {
   const bgcolor = useStore((state) => state.backgroundColor);
