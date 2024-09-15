@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-types */
 import { create } from 'zustand';
 
 interface StoreState {

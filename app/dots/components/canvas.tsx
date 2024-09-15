@@ -1,6 +1,4 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-/* eslint-disable react-hooks/exhaustive-deps */
+
 import React, { useState, useEffect, useRef } from "react";
 import * as turf from "@turf/turf";
 import { geoEqualEarth, geoPath } from "d3-geo";

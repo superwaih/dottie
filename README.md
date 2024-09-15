@@ -1,4 +1,4 @@
-`# Dottie - Dot Map Generator
+# Dottie - Dot Map Generator
 
 Dottie is a powerful web application built with [Next.js](https://nextjs.org) for generating dot maps for any country in the world. It provides a smooth and interactive way to visualize geographic data, making it ideal for data visualization, population density mapping, and other geospatial projects.
 
@@ -19,7 +19,7 @@ Follow these steps to run Dottie locally:
 
 
 git clone https://github.com/your-repo/dottie.git
-cd dottie `
+cd dottie 
 
 ### 2\. Install Dependencies
 
@@ -27,25 +27,18 @@ Run the following command to install all the required dependencies:
 
 
 `npm install
-# or
 yarn install
-# or
 pnpm install`
 
 ### 3\. Run the Development Server
 
 After installation, start the development server:
 
-bash
 
-Copy code
 
 `npm run dev
-# or
 yarn dev
-# or
 pnpm dev
-# or
 bun dev`
 
 Open <http://localhost:3000> in your browser to view the app.
